@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="panel.css">
+    <title>JobDaemon Filler</title>
+  </head>
+  <body>
+    <main>
+      <h1>JobDaemon Filler</h1>
+      <p id="connection-status" class="status">Checking your local profile service…</p>
+      <section class="card">
+        <button id="scan">Scan this application page</button>
+        <p id="scan-status" class="hint">No page scanned yet.</p>
+      </section>
+      <section id="proposals" hidden>
+        <h2>Review proposed values</h2>
+        <p class="hint">Only checked values are filled. Existing page values are never overwritten.</p>
+        <div id="proposal-list"></div>
+        <button id="fill">Fill checked fields</button>
+      </section>
+      <section class="card safety">
+        <h2>Safety</h2>
+        <p>This tool never submits, uploads files, or fills passwords, identity numbers, demographic/EEO answers, CAPTCHA, or unrecognized questions.</p>
+      </section>
+    </main>
+    <script src="panel.js"></script>
+  </body>
+</html>

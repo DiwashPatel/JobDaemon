@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "JobDaemon Application Filler",
+  "version": "0.2.0",
+  "description": "Local, review-first application filling. It never submits applications.",
+  "permissions": ["activeTab", "sidePanel", "tabs"],
+  "host_permissions": ["http://127.0.0.1:8765/*"],
+  "action": {
+    "default_title": "JobDaemon Application Filler"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js", "verifier.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

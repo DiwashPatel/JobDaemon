@@ -1,0 +1,16 @@
+.env
+venv/
+env/
+__pycache__/
+.vscode/
+collection/data/*
+!collection/data/.gitkeep
+database/*.db
+!database/.gitkeep
+collection/sources/*.txt
+filling/profile*.json
+!filling/profile.example.json
+filling/profile*.txt
+!filling/profile.example.txt
+verification/applicant_profile*.txt
+!verification/applicant_profile.example.txt

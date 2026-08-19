@@ -1,0 +1,4 @@
+litellm
+httpx
+beautifulsoup4
+playwright

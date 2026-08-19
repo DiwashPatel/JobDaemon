@@ -1,0 +1,20 @@
+:root { color: #17202a; font-family: system-ui, sans-serif; }
+body { margin: 0; min-width: 330px; }
+main { padding: 16px; }
+h1 { font-size: 20px; margin: 0 0 12px; }
+h2 { font-size: 15px; margin: 16px 0 8px; }
+button { box-sizing: border-box; cursor: pointer; margin-top: 8px; padding: 9px; width: 100%; }
+button:disabled { cursor: not-allowed; opacity: 0.55; }
+input { box-sizing: border-box; margin-top: 6px; padding: 8px; width: 100%; }
+label { display: block; font-size: 13px; font-weight: 600; }
+.card { background: #f5f7fa; border-radius: 8px; margin: 12px 0; padding: 12px; }
+.status { border-left: 4px solid #697586; margin: 0 0 12px; padding-left: 8px; }
+.status.ready { border-color: #16803c; }
+.status.error { border-color: #c62e2e; }
+.hint, .safety p { color: #4a5568; font-size: 12px; line-height: 1.4; }
+.proposal { border: 1px solid #d9e0e7; border-radius: 6px; margin: 8px 0; padding: 8px; }
+.proposal label { align-items: start; display: flex; font-weight: 400; gap: 8px; }
+.proposal input { margin: 2px 0 0; width: auto; }
+.proposal strong, .proposal span { display: block; }
+.proposal span { color: #4a5568; font-size: 12px; margin-top: 3px; overflow-wrap: anywhere; }
+code { font-size: 11px; }
